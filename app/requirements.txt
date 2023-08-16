@@ -1,0 +1,4 @@
+marshmallow==3.20.1
+motor==3.2.0
+pymongo==4.4.1
+quart==0.18.4

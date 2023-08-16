@@ -19,16 +19,18 @@ class Article(object):
 
 
 uri = os.getenv('MONGO_URI')
+
+if uri is None:
+    raise Exception("No MONGO_URI environment variable found")
+
 client = AsyncIOMotorClient(uri, server_api=ServerApi('1'))
 
 db = client.shop 
 
 if db is None:
-    print("No database found!")
     raise Exception("No database found")
 
 if db.articles is None:
-    print("No articles collection found!")
     raise Exception("No articles collection found")
 
 
