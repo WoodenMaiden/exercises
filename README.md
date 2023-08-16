@@ -1,7 +1,5 @@
-# Créer une paire de clés
+# Get Organization ID
 
-![generate keys](./generate_keys.gif)
+![orga](./orga.png)
 
-# Après avoir configuré le provider
-
-Exécutez `terraform init` dans le répertoire terraform
+![orga_id](./orga_id.png)
