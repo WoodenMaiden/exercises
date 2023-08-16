@@ -10,6 +10,12 @@ variable "atlas_prv_key" {
     description = "Private key for Atlas"
 }
 
+variable "flyio_token" {
+    nullable    = false
+    type        = string
+    description = "Fly.io auth token"
+}
+
 variable "atlas_org_id" {
     nullable    = false
     type        = string
