@@ -1,5 +1,8 @@
 FROM python:latest
 
+ENV QUART_ENV=development
+ENV QUART_DEBUG=true
+
 WORKDIR /app
 
 COPY app .
