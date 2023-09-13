@@ -61,9 +61,9 @@ async def create_article():
     return jsonify({ "id": str(result.inserted_id) })
 
 
-# @app.route("/static/<path:filename>")
-# async def serve_static(filename):
-#     return await send_from_directory(filename)
+@app.route("/secret")
+async def serve_secret():
+    return open("./secret", "r").read(), 200 
 
 @app.route("/")
 async def index():
